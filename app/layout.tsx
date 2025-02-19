@@ -1,14 +1,17 @@
-import "@/app/ui/global.css";
-import { inter } from "./ui/fonts";
+import '@/app/ui/global.css'
+import { inter } from './ui/fonts'
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
+      <head>
+        <title>Acme dashboard</title>
+      </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
-  );
+  )
 }
